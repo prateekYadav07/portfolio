@@ -259,7 +259,7 @@ section {
                         content: '';
                         position: absolute;
                         left: 0;
-                        
+
                         width: 2rem;
                         height: 2px;
                         background-color: var(--color-grey-3);
@@ -277,8 +277,128 @@ section {
             }
         }
     }
+
+    .left-about {
+        p {
+            line-height: 2rem;
+            padding: 1rem;
+            color: var(--color-grey-1);
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+    }
 }
 
+.about-stats {
+    padding-bottom: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    .stat-title {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: bolder;
+        padding: 2rem 0;
+        position: relative;
+        text-align: center;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: -10%;
+            width: 100%;
+            height: 5px;
+            background-color: var(--color-grey-5);
+            transform: translateX(-50%);
+        }
+    }
+
+    .progress-bars {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+
+        .progress-bar {
+            display: flex;
+            flex-direction: column;
+            transition: var(--transition);
+
+            .prog-title {
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+
+            .progress-con {
+                display: flex;
+                align-items: center;
+
+                .prog-text {
+                    color: var(--color-grey-2);
+                }
+
+                .progress {
+                    width: 100%;
+                    height: .45rem;
+                    background-color: var(--color-grey-4);
+                    margin-left: 1rem;
+                    position: relative;
+
+                    span {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        background-color: var(--color-secondary);
+                        transition: var(--transition);
+
+                        &:hover {
+                            cursor: default;
+                            transform: translateZ(100px);
+                            transition: var(--transition);
+                            border: 2px solid var(#9ecaed);
+                            box-shadow: 0 0 10px #9ecaed;
+                            border-radius: 7px;
+                            // box-shadow: 1px 2px 15px rgba(0, 0, 0, .32);
+                        }
+                    }
+
+                    .html {
+                        width: 90%;
+                    }
+
+                    .js {
+                        width: 80%;
+                    }
+
+                    .css {
+                        width: 70%;
+                    }
+
+                    .vue3 {
+                        width: 50%;
+                    }
+
+                    .java {
+                        width: 90%;
+                    }
+
+                    .python {
+                        width: 80%;
+                    }
+
+                    .linux {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
 
 // independent componenet
 .btn-con {
