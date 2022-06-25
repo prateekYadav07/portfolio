@@ -558,6 +558,69 @@ section {
     transition: var(--transition);
 }
 
+//blog section
+.blogs-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    margin: 3rem 0;
+    .image{
+        max-height: 100%;
+        max-width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            padding: 1%;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            filter: grayscale(100%);
+            transition: var(--transition);
+        }
+    }
+    .blog{
+        position: relative;
+        background-color: var(--color-grey-5);
+        border-radius: 5px;
+        box-shadow: var(--box-shadow-1);
+        transition: var(--transition);
+        &:hover{
+            box-shadow: var(--box-shadow-1);
+            transform: translateY(-5px);
+            transition: var(--transition);
+            img{
+                filter: grayscale(0);
+                transform: scale(1.1);
+                transition: var(--transition);
+                box-shadow: 4px 0px 15px rgba(224, 211, 211, 1);
+            }
+        }
+    }
+    .blog-text{
+        margin-top: -7px;
+        padding: 1.1rem;
+        h4{
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 10px 0;
+            transition: var(--transition);
+            cursor: pointer;
+            &:hover{
+                color: var(--color-secondary);
+            }
+        }
+        p{
+            color: var(--color-grey-2);
+            line-height: 2rem;
+            padding-bottom: 1rem;
+        }
+        border-top: 8px solid var(--color-secondary);
+    }
+}
+
 // independent componenet
 .btn-con {
     display: flex;
