@@ -526,6 +526,7 @@ section {
   border-radius: 5px;
   box-shadow: var(--box-shadow-1);
   transition: var(--transition);
+  border-radius: 15px;
 }
 .blogs-card .blog:hover {
   box-shadow: var(--box-shadow-1);
@@ -558,6 +559,63 @@ section {
   color: var(--color-grey-2);
   line-height: 2rem;
   padding-bottom: 1rem;
+}
+
+.contact-content-con {
+  display: flex;
+  padding-top: 3.5rem;
+}
+.contact-content-con .left-contact {
+  flex: 2;
+}
+.contact-content-con .left-contact h4 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.contact-content-con .left-contact p {
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+.contact-content-con .left-contact .contact-info .contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-content-con .left-contact .contact-info .contact-item p {
+  margin: 0.3rem 0 !important;
+  padding: 0 !important;
+}
+.contact-content-con .right-contact {
+  flex: 3;
+  margin-left: 3rem;
+}
+.contact-content-con .right-contact .input-control {
+  margin: 1.5rem 0;
+}
+.contact-content-con .right-contact .input-control input,
+.contact-content-con .right-contact .input-control textarea {
+  border-radius: 30px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.8rem 1.1rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-grey-5);
+  width: 100%;
+  color: var(--color-white);
+  resize: none;
+}
+.contact-content-con .right-contact .submit-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.contact-content-con .right-contact .i-c-2 {
+  display: flex;
+}
+.contact-content-con .right-contact .i-c-2 :last-child {
+  margin-left: 1.5rem;
 }
 
 .btn-con {
